@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+curl -s https://www.cbr.ru/currency_base/daily/ | sed -n '/'"$1"'/,+3p' | sed -n '$p' | sed -n -E 's/\s+<td>//p' | sed -n -E 's/<\/td>\s+//p'
+

@@ -1,4 +1,4 @@
 install:
-	cp -R ./scripts /usr/local/bin
-	echo "export PATH=${PATH}:/usr/local/bin/scripts" >> /home/m3xan1k/.bashrc
+	cp -R ./scripts ~/.local/bin
+	echo "export PATH=${PATH}:${HOME}/.local/bin/scripts" >> ~/.bashrc
 
